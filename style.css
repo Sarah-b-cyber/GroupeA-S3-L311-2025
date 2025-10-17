@@ -1,0 +1,43 @@
+html, body{
+margin:0;
+padding: 0;
+font-family: "Aldrich";
+font-size: 12px;
+height:100%;
+color: #F0F1D5;
+background-color: transpent;
+}
+#wrappr{
+display:flex;
+justify-content:center;
+align-items:center;
+height: 100%;
+}
+.inside
+font-weight: bold;
+font-size: 75px;;
+}
+.timer span::after{
+content: " : ";
+}
+.timer span:last-child::after{
+content: "";
+}
+.controls{
+text-align: center;
+}
+.controls button {
+box-sizing: border-box;
+height: 74px;
+background-color: transparent;
+border-color: transparent transparent transparent #F0F1D5;
+transition: 100ms all ease;
+will-change: border-width;
+cursor: pointer;
+border-style: solid;
+border-width: 37px 0 37px 60px;
+}
+.controls button.pause{
+border-style: double;
+border-width: 0px 0 0px 60px;
+}
